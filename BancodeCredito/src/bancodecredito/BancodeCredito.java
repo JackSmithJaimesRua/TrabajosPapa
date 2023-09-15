@@ -22,9 +22,7 @@ public class BancodeCredito {
         String optionSeleccionada=" ";
         String monto_Deposito=" ";
         String monto_Retirar="";
-        double Ver_saldo;
-        double Depositar;
-        double Retirar;
+
         
         System.out.println("***BANCO DE CREDITO JACK***");
         System.out.println("1. VER SALDO: ");
@@ -58,25 +56,27 @@ public class BancodeCredito {
             
         }
         
+        
         Scanner rt = new Scanner(System.in);
         System.out.println("Cuanto vas a retirar: ");
          
         
         
         if (optionSeleccionada.equals("3")){
-        System.out.println("Saldo_actual: " + saldo_actual);
-        System.out.println("Monto a retirar: ");
+            System.out.println("Saldo_actual: " + saldo_actual);
+            System.out.println("Monto a retirar: ");
         
-        monto_Retirar = rt.nextLine();
+            monto_Retirar = rt.nextLine();
         
-        int cantidadRetiro = Integer.parseInt(monto_Retirar);
+            int cantidadRetiro = Integer.parseInt(monto_Retirar);
         
-        int nuevoRetiro = saldo_actual - cantidadRetiro;
+            int nuevoRetiro = saldo_actual - cantidadRetiro;
         
-        System.out.println("Nuevo retiro: " + nuevoRetiro);
+            System.out.println("Nuevo retiro: " + nuevoRetiro);
         
+        } else {
+            System.out.println("cantidad invalida: ");
         }
-        
-        
+   
     }
 }
