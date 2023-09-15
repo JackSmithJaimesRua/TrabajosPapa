@@ -4,6 +4,8 @@
  */
 package bancodecredito;
 
+import java.util.Scanner;
+
 
 /**
  *
@@ -17,9 +19,7 @@ public class BancodeCredito {
     public static void main(String[] args) {
         // TODO code application logic here
         final int saldo_inicial = 200;
-        int option0;
-        int option1;
-        int option2;
+        String optionSeleccionada=" ";
         double Ver_saldo;
         double Depositar;
         double Retirar;
@@ -29,10 +29,13 @@ public class BancodeCredito {
         System.out.println("2. DEPOSITAR: ");
         System.out.println("3. RETIRAR: ");
         
-        if (option1 == Ver_saldo){
-            System.out.println("Su sald inicial es:");
-        } else if(option2 == Depositar){
-           System.out.println("Ingresa el monto a despositar:");
+        
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Introduzca la opcion:");
+        optionSeleccionada = sc.nextLine();        
+        
+        if (optionSeleccionada.equals("1")){
+            System.out.println("Su saldo es: " + saldo_inicial);
         }
         
         
