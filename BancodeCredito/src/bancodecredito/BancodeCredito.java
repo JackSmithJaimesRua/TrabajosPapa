@@ -72,7 +72,7 @@ public class BancodeCredito {
         
             double nuevoRetiro = saldo_actual - cantidadRetiro;
         
-            System.out.println("Saldo: " + nuevoRetiro);
+            System.out.println("Saldo que te queda: " + nuevoRetiro);
         
         } 
    
