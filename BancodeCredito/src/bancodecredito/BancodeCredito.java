@@ -74,9 +74,7 @@ public class BancodeCredito {
         
             System.out.println("Nuevo retiro: " + nuevoRetiro);
         
-        } else {
-            System.out.println("cantidad invalida: ");
-        }
+        } 
    
     }
 }
