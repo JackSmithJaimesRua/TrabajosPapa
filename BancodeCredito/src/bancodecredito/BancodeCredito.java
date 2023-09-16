@@ -40,39 +40,39 @@ public class BancodeCredito {
         }
         
         Scanner cs = new Scanner(System.in);
-        System.out.println("Cuanto vas a depositar: ");
+        
         
         
         if  (optionSeleccionada.equals("2")){
             System.out.println("Saldo_actual: " + saldo_actual);
-            System.out.println("monto_Deposito: ");
+            System.out.println("Cuanto vas a depositar: ");
             
             monto_Deposito = cs.nextLine();
             
-            int cantidadDeposito = Integer.parseInt(monto_Deposito);
+            double cantidadDeposito = Integer.parseInt(monto_Deposito);
             
-            int nuevoSaldo = saldo_actual + cantidadDeposito;
+            double nuevoSaldo = saldo_actual + cantidadDeposito;
             System.out.println("Nuevo saldo: " + nuevoSaldo);
             
         }
         
         
         Scanner rt = new Scanner(System.in);
-        System.out.println("Cuanto vas a retirar: ");
+        
          
         
         
         if (optionSeleccionada.equals("3")){
             System.out.println("Saldo_actual: " + saldo_actual);
-            System.out.println("Monto a retirar: ");
+            System.out.println("Cuanto vas a retirar: ");
         
             monto_Retirar = rt.nextLine();
         
-            int cantidadRetiro = Integer.parseInt(monto_Retirar);
+            double cantidadRetiro = Integer.parseInt(monto_Retirar);
         
-            int nuevoRetiro = saldo_actual - cantidadRetiro;
+            double nuevoRetiro = saldo_actual - cantidadRetiro;
         
-            System.out.println("Nuevo retiro: " + nuevoRetiro);
+            System.out.println("Saldo: " + nuevoRetiro);
         
         } 
    
