@@ -44,23 +44,24 @@ public class BancodeCredito {
         
         if (optionSeleccionada.equals("0")){
             System.out.println("Ingresa su ID: " + Nombre_ID);
-        }else{
+      
+        } else {
             System.out.println("Su ID es incorrecto");
         }
         
-        optionSeleccionada = id.nextLine(); 
+            optionSeleccionada = id.nextLine();
         
+          
         Scanner rs = new Scanner(System.in);
         
         if (optionSeleccionada.equals("1.1")){
             System.out.println("Ingresa tu contraseña: " + Contraseña);
-        }else{
+        } else {
             System.out.println("Contraseña incorrecta");
+            
         }
-        
-        optionSeleccionada = rs.nextLine();
-        
-        
+       
+        optionSeleccionada = rs.nextLine(); 
         
         if (optionSeleccionada.equals("1")){
             System.out.println("Su saldo es: " + saldo_actual);
